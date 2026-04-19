@@ -133,7 +133,7 @@ Exploratory Data Analysis (EDA) was performed to understand the structure of the
 Histograms were used to analyze the distribution of numerical features such as **AGE** and **LIMIT_BAL**.
 The plots show that most customers fall within a moderate age range and lower credit limit values.
 These visualizations help in understanding how the data is distributed and identifying general patterns in the dataset.
-
+![Age Distribution](age.png)
 
 
 ### 📊 Detecting Outliers
