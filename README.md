@@ -2,7 +2,7 @@ Machine Learning based Credit Card Default Prediction
 
 📌 Project Overview
 
-Credit card default is the quality prediction task of significant financial worry to financial institutions given that it causes huge monetary losses. This project is about creating a machine learning model which can predict if a customer will default his/her credit-card payment next month.
+Credit card default is the important financial risk prediction problem to financial institutions given that it causes huge monetary losses. This project is about creating a machine learning model which can predict if a customer will default his/her credit-card payment next month.
 
 The model assists in identifying at-risk customers to enable strategic decision-making by analyzing customer data like payment history, bill statements and demographic information.
 
