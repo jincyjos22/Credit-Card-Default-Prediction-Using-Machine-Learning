@@ -132,14 +132,9 @@ Exploratory Data Analysis (EDA) was performed to understand the structure of the
 ### 🔍 Understanding Data Distribution
 
 * **Histogram:**
-  Histograms were used to analyze the distribution of numerical features such as **AGE** and **LIMIT_BAL**.
-  It was observed that most customers fall within a moderate age group and lower credit limit range, indicating a **right-skewed distribution**.
-
-* **Kernel Density Estimation (KDE):**
-  KDE plots helped visualize the probability density of features.
-  These plots confirmed that many financial variables are skewed, especially billing and payment amounts.
-
----
+Histograms were used to analyze the distribution of numerical features such as **AGE** and **LIMIT_BAL**.
+The plots show that most customers fall within a moderate age range and lower credit limit values.
+These visualizations help in understanding how the data is distributed and identifying general patterns in the dataset.
 
 ### 📊 Detecting Outliers
 
