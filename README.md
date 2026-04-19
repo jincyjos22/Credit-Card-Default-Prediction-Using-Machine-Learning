@@ -226,7 +226,7 @@ This feature captures the overall payment behavior of customers and helps the mo
 Important features were identified based on correlation analysis and domain knowledge.
 Repayment history variables (**PAY_0 to PAY_6**) were found to be highly influential in predicting default.
 
-7. Feature Scaling
+## 7. Feature Scaling
 
 The Credit Card Default dataset contains financial and behavioral features with significantly different value ranges. For example:
 
@@ -249,7 +249,7 @@ Conclusion
 
 Feature scaling improved model performance by normalizing all financial and behavioral features in the dataset.
 
-8. Model Building
+## 8. Model Building
 
 The goal of this project is to predict whether a customer will default on their credit card payment based on historical financial data.
 
@@ -271,7 +271,7 @@ Conclusion
 
 Multiple models were trained to understand different patterns in customer behavior and identify the most accurate model for predicting default risk.
 
-9. Model Evaluation
+## 8. Model Evaluation
 
 Models were evaluated based on their ability to correctly identify customers who are likely to default.
 
@@ -296,7 +296,7 @@ Conclusion
 
 Model evaluation helped identify the most reliable algorithm for predicting credit card default risk.
 
-10. Hyperparameter Tuning
+## 10. Hyperparameter Tuning
 
 Hyperparameter tuning was performed to further improve the performance of the selected model.
 
@@ -315,7 +315,7 @@ Conclusion
 
 Tuning improved the model’s ability to generalize and make accurate predictions on real-world financial data.
 
-12. Model Deployment
+## 11. Model Deployment
 
 The trained model was deployed using a simple web-based interface to simulate real-world usage.
 
@@ -337,7 +337,7 @@ Conclusion
 
 Deployment demonstrates how the model can assist financial institutions in identifying high-risk customers in real time.
 
-13. Conclusion
+## 12. Conclusion
 
 This project successfully developed a machine learning model to predict credit card default risk using real-world financial data.
 
