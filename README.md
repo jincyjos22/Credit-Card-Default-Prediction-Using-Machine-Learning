@@ -121,11 +121,6 @@ This helps capture overall payment behavior of customers more effectively.
 Feature scaling was applied using **StandardScaler** to normalize numerical features.
 This ensures that all variables are on a similar scale, which improves the performance of models like KNN and SVM.
 
----
-
-### 📌 Summary
-
-Data preprocessing improved the quality of the dataset by handling inconsistencies, reducing noise, and preparing the data for effective model training.
 
 
 ## 5. Exploratory Data Analysis (EDA) – Insights
@@ -198,52 +193,169 @@ Exploratory Data Analysis (EDA) was performed to understand the structure of the
 * Presence of **outliers** in financial features
 * Many numerical features are **skewed**, especially billing and payment data
 
+
+## 6. Feature Engineering
+
+Feature engineering involves transforming and creating new features to improve the performance of machine learning models.
+
 ---
 
-### 📌 Summary
+### ● Encoding Categorical Features
 
-EDA provided valuable insights into customer behavior, data distribution, and feature importance. These findings helped guide preprocessing, feature engineering, and model selection for better prediction performance.
+In this dataset, categorical variables such as **SEX, EDUCATION, and MARRIAGE** are already represented in numerical form.
+Therefore, additional encoding techniques like One-Hot Encoding or Label Encoding were not required.
 
+However, these variables were carefully reviewed to ensure consistency and correctness before model training.
 
+---
 
+### ● Creating New Features
 
+A new feature called **TOTAL_PAY** was created by summing all payment amounts from the past six months (**PAY_AMT1 to PAY_AMT6**).
 
+[
+\text{TOTAL_PAY} = \text{PAY_AMT1} + \text{PAY_AMT2} + \text{PAY_AMT3} + \text{PAY_AMT4} + \text{PAY_AMT5} + \text{PAY_AMT6}
+]
 
+This feature captures the overall payment behavior of customers and helps the model better understand their repayment capacity.
 
+---
 
+### ● Feature Selection
 
+Important features were identified based on correlation analysis and domain knowledge.
+Repayment history variables (**PAY_0 to PAY_6**) were found to be highly influential in predicting default.
 
+7. Feature Scaling
 
+The Credit Card Default dataset contains financial and behavioral features with significantly different value ranges. For example:
 
+Credit limit and bill amounts are very large values
+Payment amounts vary widely
+Age is within a small range
+Repayment status values are small integers
 
+To ensure that all features contribute equally during model training, feature scaling was applied.
 
+Technique Used
 
+StandardScaler (Z-score normalization) was used to standardize all numerical features.
 
- 
-⚙️ Technologies Used
+Reason for Selection
+Financial features like bill amounts and credit limits have large variations
+Scaling prevents these features from dominating smaller ones like age or repayment status
+Essential for algorithms such as SVM and KNN
+Conclusion
 
-Python 🐍
+Feature scaling improved model performance by normalizing all financial and behavioral features in the dataset.
 
-Pandas
+8. Model Building
 
-NumPy
+The goal of this project is to predict whether a customer will default on their credit card payment based on historical financial data.
 
-Matplotlib & Seaborn
+Dataset Handling
+Input features include customer demographics, credit limit, repayment history, bill statements, and previous payments
+Target variable: Default payment next month (1 = Yes, 0 = No)
 
-Scikit-learn
+The dataset was split into:
 
-Flask (for deployment)
+Training data (80%)
+Testing data (20%)
+Models Applied
+Logistic Regression – baseline classification model
+Decision Tree – captures decision rules from financial behavior
+Random Forest – improves prediction by combining multiple trees
+Support Vector Machine (SVM) – effective for classification boundaries
+K-Nearest Neighbors (KNN) – uses similarity between customers
+Conclusion
 
-🔧 Data Preprocessing
+Multiple models were trained to understand different patterns in customer behavior and identify the most accurate model for predicting default risk.
 
-Handled missing values
+9. Model Evaluation
 
-Removed duplicates
+Models were evaluated based on their ability to correctly identify customers who are likely to default.
 
-Treated outliers using boxplots
+Evaluation Metrics Used
+Accuracy – overall correctness of predictions
+Precision – correctness of predicted defaulters
+Recall – ability to identify actual defaulters
+F1-Score – balance between precision and recall
+Confusion Matrix – detailed breakdown of predictions
+ROC-AUC Score – model’s ability to distinguish between default and non-default
+Dataset-Specific Insight
+The dataset is slightly imbalanced (more non-defaulters than defaulters)
+Therefore, Recall is more important than Accuracy, as missing a defaulter can lead to financial loss
+Best Model
 
-Encoded categorical variables
+Random Forest performed best because:
 
-Ensured data consistency
+It handles complex financial relationships effectively
+It reduces overfitting
+It provides consistent performance across all metrics
+Conclusion
 
-📈 Exploratory Data Analysis
+Model evaluation helped identify the most reliable algorithm for predicting credit card default risk.
+
+10. Hyperparameter Tuning
+
+Hyperparameter tuning was performed to further improve the performance of the selected model.
+
+Approach
+Used systematic search methods to find the best parameter values
+Focused on optimizing the Random Forest model
+Parameters Optimized
+Number of trees in the forest
+Maximum depth of trees
+Minimum samples required to split nodes
+Impact on Dataset
+Improved prediction accuracy for default cases
+Reduced overfitting on training data
+Enhanced performance on unseen customer data
+Conclusion
+
+Tuning improved the model’s ability to generalize and make accurate predictions on real-world financial data.
+
+12. Model Deployment
+
+The trained model was deployed using a simple web-based interface to simulate real-world usage.
+
+Implementation
+Model was saved after training
+A user interface was created using Flask
+Users can input customer financial details
+Functionality Based on Dataset
+Accepts inputs such as:
+Credit limit
+Age
+Repayment history
+Bill and payment amounts
+Predicts whether the customer is likely to default
+Output
+High Risk → Likely to default
+Low Risk → Not likely to default
+Conclusion
+
+Deployment demonstrates how the model can assist financial institutions in identifying high-risk customers in real time.
+
+13. Conclusion
+
+This project successfully developed a machine learning model to predict credit card default risk using real-world financial data.
+
+Key Findings from Dataset
+Customers with delayed repayment history are more likely to default
+Higher outstanding bills increase default risk
+Payment behavior is a strong indicator of future default
+Best Model
+
+Random Forest provided the most accurate and reliable predictions for this dataset.
+
+Practical Applications
+Helps banks identify risky customers
+Supports credit approval decisions
+Reduces financial losses
+Future Improvements
+Use larger and updated financial datasets
+Apply advanced models such as deep learning
+Improve feature selection and engineering
+Deploy as a scalable web application
+
