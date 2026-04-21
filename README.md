@@ -23,21 +23,21 @@ This project predicts whether a customer will default on their credit card payme
 ## ▶️ How to Run
 
 1. Clone the repository:
-   git clone https://github.com/jincyjos22/Credit-Card-Default-Prediction-Using-Machine-Lea
+   git clone https://github.com/jincyjos22/Credit-Card-Default-Prediction-Using-Machine-Learning.git
 
-2. Go to project folder:
+3. Go to project folder:
    cd Credit-Card-Default-Prediction-Using-Machine-Learning
 
-3. Install dependencies:
+4. Install dependencies:
    pip install -r requirements.txt
 
-4. Run model training:
+5. Run model training:
    python train_model.py
 
-5. Run the app:
+6. Run the app:
    python app.py
 
-6. Open browser:
+7. Open browser:
    http://127.0.0.1:5000/
 
 ---
