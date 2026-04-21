@@ -201,11 +201,6 @@ These visualizations help in understanding how the data is distributed and ident
   Heatmap analysis showed strong correlations between repayment status variables (**PAY_0 to PAY_6**) and the target variable.
   This indicates that **payment history is the most influential factor in predicting default**.
 
-* **Pair Plot:**
-  Pair plots were used to visualize relationships between selected numerical features.
-  They revealed patterns and clusters, helping to understand how variables interact with each other.
-
----
 
 ### 📊 Categorical Analysis
 
@@ -220,7 +215,7 @@ These visualizations help in understanding how the data is distributed and ident
 * **Pie Chart:**
   Pie charts were used to represent proportions of categorical variables such as gender or default status, giving a clear view of class distribution.
 
----
+
 
 ### 📈 Trend Analysis
 
