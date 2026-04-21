@@ -1,3 +1,54 @@
+# 💳 Credit Card Default Prediction (Machine Learning)
+
+This project predicts whether a customer will default on their credit card payment using machine learning techniques.
+
+---
+
+## 🚀 Demo Features
+- Predict default risk (High / Low)
+- User-friendly web interface (Flask)
+- Uses real financial dataset
+
+---
+
+## 🛠️ Tech Stack
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Flask
+- Matplotlib, Seaborn
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository:
+   git clone https://github.com/jincyjos22/Credit-Card-Default-Prediction-Using-Machine-Lea
+
+2. Go to project folder:
+   cd Credit-Card-Default-Prediction-Using-Machine-Learning
+
+3. Install dependencies:
+   pip install -r requirements.txt
+
+4. Run model training:
+   python train_model.py
+
+5. Run the app:
+   python app.py
+
+6. Open browser:
+   http://127.0.0.1:5000/
+
+---
+
+## 📌 Output
+- **High Risk** → Customer likely to default  
+- **Low Risk** → Customer not likely to default  
+
+---
+
+
 Machine Learning based Credit Card Default Prediction
 
 # 1. Introduction 
