@@ -200,7 +200,7 @@ These visualizations help in understanding how the data is distributed and ident
 * **Heatmap (Correlation Matrix):**
   Heatmap analysis showed strong correlations between repayment status variables (**PAY_0 to PAY_6**) and the target variable.
   This indicates that **payment history is the most influential factor in predicting default**.
-<img width="1536" height="754" alt="Heatmap" src="https://github.com/user-attachments/assets/931ab56f-2b6d-4403-862b-6ffc92b5e2ae" />
+<img width="1536" height="754" alt="Heatmap" src="https://github.com/user-attachments/assets/1b772311-ad2b-4ade-9438-5c336c63f695" />
 
 
 ### 📊 Categorical Analysis
