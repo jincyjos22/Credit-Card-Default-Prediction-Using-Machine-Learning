@@ -192,6 +192,7 @@ These visualizations help in understanding how the data is distributed and ident
 * **Box Plot:**
   Boxplots were used to detect outliers in features like **LIMIT_BAL** and **BILL_AMT** variables.
   Significant outliers were observed, indicating the presence of customers with extremely high credit limits or bill amounts.
+<img width="640" height="480" alt="Boxplot" src="https://github.com/user-attachments/assets/5a26d8d9-95f6-41cd-bd35-65fc56692722" />
 
 ---
 
