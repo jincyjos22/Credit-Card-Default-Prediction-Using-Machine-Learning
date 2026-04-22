@@ -13,6 +13,7 @@ This project predicts whether a customer will default on their credit card payme
 
 ## 📁 Project Structure   
 
+```
 ├── app.py
 ├── model.pkl
 ├── scaler.pkl
@@ -20,8 +21,8 @@ This project predicts whether a customer will default on their credit card payme
 ├── templates/
 │   └── index.html
 ├── static/
-├── requirements.txt
-
+└── requirements.txt
+```
 ---
 
 ## 🛠️ Tech Stack
