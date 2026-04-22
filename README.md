@@ -374,22 +374,16 @@ Model evaluation helped identify the most reliable algorithm for predicting cred
 
 ## 10. Hyperparameter Tuning
 
-Hyperparameter tuning was performed to further improve the performance of the selected model.
+Hyperparameter tuning was performed to improve the performance of the Random Forest model.
 
-Approach
-Used systematic search methods to find the best parameter values
-Focused on optimizing the Random Forest model
-Parameters Optimized
-Number of trees in the forest
-Maximum depth of trees
-Minimum samples required to split nodes
-Impact on Dataset
-Improved prediction accuracy for default cases
-Reduced overfitting on training data
-Enhanced performance on unseen customer data
-Conclusion
+- Used systematic search (GridSearchCV)
+- Optimized number of trees, max depth, and split criteria
+- Reduced overfitting and improved generalization
 
-Tuning improved the model’s ability to generalize and make accurate predictions on real-world financial data.
+### 📈 Result
+Improved model accuracy and performance on unseen data.
+
+---
 
 ## 11. Model Deployment
 
