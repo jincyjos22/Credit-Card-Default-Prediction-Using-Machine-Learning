@@ -20,7 +20,8 @@ This project predicts whether a customer will default on their credit card payme
 ├── train_model.py
 ├── templates/
 │   └── index.html
-├── static/
+├── data/
+│   └── default of credit card clients.xls
 └── requirements.txt
 ```
 ---
