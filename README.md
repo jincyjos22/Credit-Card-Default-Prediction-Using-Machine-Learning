@@ -34,6 +34,19 @@ This project predicts whether a customer will default on their credit card payme
 
 ---
 
+## 📊 Dataset
+
+This project uses the **Default of Credit Card Clients dataset** from the UCI Machine Learning Repository.
+
+- Source: https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients  
+- Records: 30,000 customers  
+- Features: 23 input variables  
+- Target: Default payment next month (Yes/No)
+
+The dataset contains customer demographic information, credit limit, repayment history, bill statements, and payment records to predict credit card default risk.
+
+
+---
 ## ▶️ How to Run
 
 1. Clone the repository:
@@ -380,47 +393,62 @@ Conclusion
 
 Tuning improved the model’s ability to generalize and make accurate predictions on real-world financial data.
 
-## 11. Model Deployment
+## 🚀 Model Deployment
 
-The trained model was deployed using a simple web-based interface to simulate real-world usage.
+The trained machine learning model is deployed using a Flask web application to simulate real-world usage.
 
-Implementation
-Model was saved after training
-A user interface was created using Flask
-Users can input customer financial details
-Functionality Based on Dataset
-Accepts inputs such as:
-Credit limit
-Age
-Repayment history
-Bill and payment amounts
-Predicts whether the customer is likely to default
-Output
-High Risk → Likely to default
-Low Risk → Not likely to default
-Conclusion
+---
 
-Deployment demonstrates how the model can assist financial institutions in identifying high-risk customers in real time.
+### ⚙️ Implementation
+- Model is saved after training using `joblib`
+- Flask is used to build the web interface
+- Users enter customer financial details through a form
+- The model processes inputs and generates predictions
 
-## 12. Conclusion
+---
+
+### 📥 Input Features
+- Credit limit
+- Age
+- Repayment history
+- Bill amounts
+- Payment amounts
+
+---
+
+### 📊 Output
+- 🟢 **Low Risk** → Customer is likely to repay
+- 🔴 **High Risk** → Customer may default
+
+---
+
+## 🧾 Conclusion
 
 This project successfully developed a machine learning model to predict credit card default risk using real-world financial data.
 
-Key Findings from Dataset
-Customers with delayed repayment history are more likely to default
-Higher outstanding bills increase default risk
-Payment behavior is a strong indicator of future default
-Best Model
+---
 
-Random Forest provided the most accurate and reliable predictions for this dataset.
+### 🔍 Key Findings
+- Customers with delayed repayment history are more likely to default  
+- Higher outstanding bills increase default risk  
+- Payment behavior is a strong indicator of future default  
 
-Practical Applications
-Helps banks identify risky customers
-Supports credit approval decisions
-Reduces financial losses
-Future Improvements
-Use larger and updated financial datasets
-Apply advanced models such as deep learning
-Improve feature selection and engineering
-Deploy as a scalable web application
+---
 
+### 🏆 Best Model
+- **Random Forest** provided the most accurate and reliable predictions for this dataset.
+
+---
+
+### 💼 Practical Applications
+- Helps banks identify high-risk customers  
+- Supports credit approval decisions  
+- Reduces financial losses  
+
+---
+
+### 🚀 Future Improvements
+- Use larger and more recent financial datasets  
+- Apply advanced models like deep learning  
+- Improve feature selection and engineering  
+- Deploy as a scalable production web application  
