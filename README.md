@@ -62,6 +62,14 @@ This project predicts whether a customer will default on their credit card payme
 
 ---
 
+## 🎨 UI Indication
+
+- 🟢 **Green result** → Low Risk (Customer is likely to repay)
+- 🔴 **Red result** → High Risk (Customer may default)
+
+The color coding helps users quickly understand the prediction result.
+
+---
 
 Machine Learning based Credit Card Default Prediction
 
