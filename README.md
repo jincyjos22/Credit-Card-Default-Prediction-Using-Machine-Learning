@@ -65,7 +65,7 @@ The dataset contains customer demographic information, credit limit, repayment h
    python app.py
 
 7. Open browser:
-   http://127.0.0.1:5000/
+   http://192.168.1.6:5000/
 
 ---
 
