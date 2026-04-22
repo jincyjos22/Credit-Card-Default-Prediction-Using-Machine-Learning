@@ -189,53 +189,69 @@ StandardScaler was applied to normalize numerical features for better model perf
 
 
 ## 5. Exploratory Data Analysis (EDA) – Insights
+This project includes a set of simple and effective visualizations to understand customer behavior and factors influencing credit card default.
 
-Exploratory Data Analysis (EDA) was performed to understand the structure of the dataset, identify patterns, and explore relationships between features and the target variable.
+### 🔹 1. Default vs Non-Default Distribution
+
+A **count plot** is used to visualize the number of customers who defaulted vs those who did not.
+This helps in understanding the class distribution of the dataset.
+
+<img width="500" height="300" alt="countplot" src="https://github.com/user-attachments/assets/16290bf4-ecf1-4da1-999d-2e4d0b7b0e7f" />
+
 
 ---
-📉 Target Distribution (Count Plot)
 
-A count plot was used to visualize the distribution of default vs non-default customers.
-It shows that the dataset is imbalanced, with more non-defaulters than defaulters.
+### 🔹 2. Age Distribution
 
+A **histogram with KDE (Kernel Density Estimation)** is used to observe the distribution of customer age.
+This helps identify the most common age groups in the dataset.
+<img width="500" height="300" alt="histogram" src="https://github.com/user-attachments/assets/a54d6a0b-3bb8-41d4-8155-fb3dacfccf8d" />
 
+---
 
-📊 Age Distribution (Histogram + KDE)
+### 🔹 3. Credit Limit vs Default
 
-A histogram was used to analyze the distribution of customer ages.
-It helps understand the most common age group in the dataset.
+A **box plot** is used to compare credit limits between defaulters and non-defaulters.
+This helps identify whether lower or higher credit limits are associated with default risk.
+<img width="500" height="300" alt="boxplot" src="https://github.com/user-attachments/assets/230749ae-be50-404c-9121-8987b31e95dd" />
 
-💳 Credit Limit Distribution (Histogram + KDE)
+---
 
-A histogram was used to visualize LIMIT_BAL (credit limit) distribution.
-It shows that most customers have lower to moderate credit limits.
+### 🔹 4. Payment Delay vs Default (Key Insight)
 
-📦 Outlier Detection (Box Plot)
+A **bar plot** is used to analyze the relationship between repayment status (`PAY_0`) and default probability.
+This is one of the most important visualizations, showing that delayed payments strongly increase the risk of default.
+<img width="500" height="300" alt="barplot" src="https://github.com/user-attachments/assets/fee23c06-cf72-4ad8-adad-3d793e37c900" />
 
-A box plot was used to detect outliers in credit limit (LIMIT_BAL).
-It shows the presence of customers with unusually high credit limits.
+---
 
-🔗 Feature Correlation (Heatmap)
+### 🔹 5. Total Payment Distribution
 
-A correlation heatmap was used to understand relationships between numerical features.
-It helps identify how features like PAY_0, BILL_AMT1, and LIMIT_BAL relate to default risk.
+A **KDE plot** is used to visualize the distribution of total payments made by customers over the last six months.
+This helps understand general payment behavior.
+<img width="500" height="300" alt="kdeplot" src="https://github.com/user-attachments/assets/2f2a78f5-0521-4c36-9414-b41d7ccf1a24" />
 
-💰 Repayment Status vs Default (Bar Plot)
+---
 
-A bar plot was used to analyze how repayment status (PAY_0) affects default probability.
-Customers with delayed payments show a higher risk of default.
+### 🔹 6. Correlation Heatmap
 
-📈 Total Payment Distribution (Histogram)
+A **heatmap** is used to show correlations between key features such as credit limit, age, payment delay, and total payment.
+This helps identify relationships between variables and their impact on default.
+<img width="600" height="400" alt="heatmap" src="https://github.com/user-attachments/assets/580e771e-614d-4e6f-afc4-fcd1301b488c" />
 
-A histogram was used to analyze TOTAL_PAY, which represents total payments made over 6 months.
-It helps understand customer payment behavior patterns.
+---
 
-📌 Summary of Insights
-Dataset is imbalanced (more non-defaulters)
-Repayment status (PAY_0) is strongly related to default
-Customers with lower credit limits are more common
-Presence of outliers in financial features
-Payment behavior is a strong indicator of default risk
+### ✅ Summary
+
+The visualizations highlight that:
+
+* Customers with delayed payments are more likely to default
+* Payment behavior plays a critical role in predicting default
+* Credit-related features also influence risk
+
+These insights are used to support the machine learning model for predicting credit card default.
+
+---
 
 ## 6. Feature Engineering
 
