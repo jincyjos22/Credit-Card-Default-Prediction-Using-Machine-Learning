@@ -194,62 +194,51 @@ Exploratory Data Analysis (EDA) was performed to understand the structure of the
 
 ---
 
-* **Histogram:**
-Histograms were used to analyze the distribution of numerical features such as **AGE** and **LIMIT_BAL**.
-The plots show that most customers fall within a moderate age range and lower credit limit values.
-These visualizations help in understanding how the data is distributed and identifying general patterns in the dataset.
-<img width="640" height="480" alt="Hist" src="https://github.com/user-attachments/assets/86004128-7915-4472-b5c3-6b3ab7f1c245" />
+📊 Data Visualization (EDA)
 
+Data visualization was performed to understand the dataset distribution, detect patterns, and identify important relationships between features and the target variable.
 
-### 📊 Detecting Outliers
+📉 Target Distribution (Count Plot)
 
-* **Box Plot:**
-  Boxplots were used to detect outliers in features like **LIMIT_BAL** and **BILL_AMT** variables.
-  Significant outliers were observed, indicating the presence of customers with extremely high credit limits or bill amounts.
-<img width="640" height="480" alt="Boxplot" src="https://github.com/user-attachments/assets/5a26d8d9-95f6-41cd-bd35-65fc56692722" />
+A count plot was used to visualize the distribution of default vs non-default customers.
+It shows that the dataset is imbalanced, with more non-defaulters than defaulters.
 
----
+📊 Age Distribution (Histogram + KDE)
 
-### 🔗 Relationship Between Features
+A histogram was used to analyze the distribution of customer ages.
+It helps understand the most common age group in the dataset.
 
-* **Heatmap (Correlation Matrix):**
-  Heatmap analysis showed strong correlations between repayment status variables (**PAY_0 to PAY_6**) and the target variable.
-  This indicates that **payment history is the most influential factor in predicting default**.
-<img width="1536" height="754" alt="Heatmap" src="https://github.com/user-attachments/assets/1b772311-ad2b-4ade-9438-5c336c63f695" />
+💳 Credit Limit Distribution (Histogram + KDE)
 
+A histogram was used to visualize LIMIT_BAL (credit limit) distribution.
+It shows that most customers have lower to moderate credit limits.
 
-### 📊 Categorical Analysis
+📦 Outlier Detection (Box Plot)
 
-* **Count Plot:**
-  Count plots were used to compare the number of defaulters vs non-defaulters.
-  It was observed that the dataset is **imbalanced**, with more non-defaulters than defaulters.
+A box plot was used to detect outliers in credit limit (LIMIT_BAL).
+It shows the presence of customers with unusually high credit limits.
 
-* **Bar Plot:**
-  Bar plots were used to analyze relationships such as repayment status vs default.
-  Customers with delayed payments showed a significantly higher default rate.
+🔗 Feature Correlation (Heatmap)
 
-* **Pie Chart:**
-  Pie charts were used to represent proportions of categorical variables such as gender or default status, giving a clear view of class distribution.
+A correlation heatmap was used to understand relationships between numerical features.
+It helps identify how features like PAY_0, BILL_AMT1, and LIMIT_BAL relate to default risk.
 
+💰 Repayment Status vs Default (Bar Plot)
 
+A bar plot was used to analyze how repayment status (PAY_0) affects default probability.
+Customers with delayed payments show a higher risk of default.
 
-### 📈 Trend Analysis
+📈 Total Payment Distribution (Histogram)
 
-* **Line Plot:**
-  Line plots were used to observe trends across billing and payment amounts over time (months).
-  These plots helped identify consistent payment behavior patterns among customers.
+A histogram was used to analyze TOTAL_PAY, which represents total payments made over 6 months.
+It helps understand customer payment behavior patterns.
 
----
-
-### 📌 Key Insights
-
-* Most customers are **non-defaulters**, indicating class imbalance
-* **Repayment history (PAY variables)** is the most important predictor of default
-* Customers with **higher credit limits** tend to have lower default risk
-* **Higher bill amounts and lower payments** increase the probability of default
-* Presence of **outliers** in financial features
-* Many numerical features are **skewed**, especially billing and payment data
-
+📌 Summary of Insights
+Dataset is imbalanced (more non-defaulters)
+Repayment status (PAY_0) is strongly related to default
+Customers with lower credit limits are more common
+Presence of outliers in financial features
+Payment behavior is a strong indicator of default risk
 
 ## 6. Feature Engineering
 
