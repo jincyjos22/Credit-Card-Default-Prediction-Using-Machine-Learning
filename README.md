@@ -155,56 +155,37 @@ The dataset includes the following features:
 
 ## 4. Data Preprocessing & Cleaning
 
-Data preprocessing is a crucial step in the machine learning pipeline, as it ensures the dataset is clean, consistent, and suitable for building accurate models.
+Data preprocessing was performed to clean and prepare the dataset for machine learning.
+
+● Missing Values
+
+The dataset was checked for missing values. Since very few or none were present, median imputation was used for numerical features.
+
+● Outliers
+
+Outliers in features like LIMIT_BAL and bill amounts were detected using boxplots and treated where necessary.
+
+● Duplicate Records
+
+Duplicate entries were removed to ensure data quality and avoid bias in training.
+
+● Categorical Variables
+
+Categorical features (SEX, EDUCATION, MARRIAGE) were already numerically encoded, so no additional encoding was required.
+
+● Skewed Data
+
+Skewed numerical features were analyzed, and scaling was applied to improve model performance.
+
+● Feature Engineering
+
+A new feature TOTAL_PAY was created by summing PAY_AMT1 to PAY_AMT6 to capture overall payment behavior.
+
+● Feature Scaling
+
+StandardScaler was applied to normalize numerical features for better model performance.
 
 ---
-
-### ● Handling Missing Values
-
-The dataset was examined for missing values using appropriate functions.
-Since the dataset contained very few or no missing values, numerical features were handled using **median imputation**, which is robust to outliers and prevents distortion of data distribution.
-
----
-
-### ● Outlier Detection and Treatment
-
-Outliers were identified using **boxplots** for numerical features such as **LIMIT_BAL** and bill amounts.
-Extreme values were carefully analyzed and treated where necessary to reduce their impact on model performance, especially for algorithms sensitive to large variations.
-
----
-
-### ● Removing Duplicate Records
-
-Duplicate entries were checked and removed using data cleaning techniques to ensure data integrity and avoid bias in model training.
-
----
-
-### ● Encoding Categorical Variables
-
-Categorical features such as **SEX, EDUCATION, and MARRIAGE** were already represented in numerical format within the dataset.
-Therefore, no additional encoding techniques were required.
-
----
-
-### ● Handling Skewed Data
-
-Some numerical features, such as credit limit and billing amounts, exhibited skewed distributions.
-Although tree-based models are less sensitive to skewness, transformations and scaling techniques were considered to improve overall model performance.
-
----
-
-### ● Feature Engineering
-
-A new feature called **TOTAL_PAY** was created by summing all payment amount variables (**PAY_AMT1 to PAY_AMT6**).
-This helps capture overall payment behavior of customers more effectively.
-
----
-
-### ● Feature Scaling
-
-Feature scaling was applied using **StandardScaler** to normalize numerical features.
-This ensures that all variables are on a similar scale, which improves the performance of models like KNN and SVM.
-
 
 
 ## 5. Exploratory Data Analysis (EDA) – Insights
