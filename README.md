@@ -343,7 +343,9 @@ Recall – ability to detect actual defaulters
 F1-Score – balance between precision and recall
 Confusion Matrix – prediction breakdown
 ROC-AUC – model discrimination ability
-⚠️ Key Insight
+
+-----
+Key Insight
 
 The dataset is imbalanced, so Recall is more important than Accuracy, as missing defaulters leads to financial risk.
 
