@@ -193,11 +193,6 @@ StandardScaler was applied to normalize numerical features for better model perf
 Exploratory Data Analysis (EDA) was performed to understand the structure of the dataset, identify patterns, and explore relationships between features and the target variable.
 
 ---
-
-📊 Data Visualization (EDA)
-
-Data visualization was performed to understand the dataset distribution, detect patterns, and identify important relationships between features and the target variable.
-
 📉 Target Distribution (Count Plot)
 
 A count plot was used to visualize the distribution of default vs non-default customers.
