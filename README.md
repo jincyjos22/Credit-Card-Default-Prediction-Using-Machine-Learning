@@ -336,7 +336,7 @@ Conclusion
 
 Multiple models were trained to understand different patterns in customer behavior and identify the most accurate model for predicting default risk.
 
-## 8. Model Evaluation
+## 9. Model Evaluation
 
 Models were evaluated based on their ability to correctly identify customers who are likely to default.
 
