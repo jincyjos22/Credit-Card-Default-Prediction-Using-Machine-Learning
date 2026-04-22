@@ -198,6 +198,8 @@ Exploratory Data Analysis (EDA) was performed to understand the structure of the
 A count plot was used to visualize the distribution of default vs non-default customers.
 It shows that the dataset is imbalanced, with more non-defaulters than defaulters.
 
+
+
 📊 Age Distribution (Histogram + KDE)
 
 A histogram was used to analyze the distribution of customer ages.
@@ -314,28 +316,31 @@ Multiple models were trained to understand different patterns in customer behavi
 
 ## 9. Model Evaluation
 
-Models were evaluated based on their ability to correctly identify customers who are likely to default.
+## Model Evaluation
 
-Evaluation Metrics Used
-Accuracy – overall correctness of predictions
+Models were evaluated to identify customers likely to default.
+
+📊 Evaluation Metrics
+Accuracy – overall correctness
 Precision – correctness of predicted defaulters
-Recall – ability to identify actual defaulters
+Recall – ability to detect actual defaulters
 F1-Score – balance between precision and recall
-Confusion Matrix – detailed breakdown of predictions
-ROC-AUC Score – model’s ability to distinguish between default and non-default
-Dataset-Specific Insight
-The dataset is slightly imbalanced (more non-defaulters than defaulters)
-Therefore, Recall is more important than Accuracy, as missing a defaulter can lead to financial loss
-Best Model
+Confusion Matrix – prediction breakdown
+ROC-AUC – model discrimination ability
+⚠️ Key Insight
 
-Random Forest performed best because:
+The dataset is imbalanced, so Recall is more important than Accuracy, as missing defaulters leads to financial risk.
 
-It handles complex financial relationships effectively
-It reduces overfitting
-It provides consistent performance across all metrics
-Conclusion
+🏆 Best Model
 
-Model evaluation helped identify the most reliable algorithm for predicting credit card default risk.
+Random Forest performed best due to:
+
+Better handling of complex patterns
+Reduced overfitting
+Stable performance across metrics
+📌 Conclusion
+
+Model evaluation helped select the most reliable model for predicting credit card default risk.
 
 ## 10. Hyperparameter Tuning
 
