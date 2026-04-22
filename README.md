@@ -86,13 +86,11 @@ The color coding helps users quickly understand the prediction result.
 
 Machine Learning based Credit Card Default Prediction
 
-# 1. Introduction 
+# 1. 📌 Introduction 
 
-Credit card default is one of the most common problems among banks and other financial institutions. This problem results in financial losses and raises credit risk. Prediction of the credit card default by its client depends on various factors such as customer payment history, the limit of his credit card, demographics information, and other aspects of his financial behavior.
+Credit card default is a major problem for financial institutions, leading to financial losses and increased risk.  
 
-Standard approaches do not allow predicting such behavior accurately due to its complex nature. That is why there should be an efficient machine learning model which would analyze the historical data and provide valuable predictions.
-
-This prediction will allow organizations to identify potential defaulters in time and prevent their further problematic actions.
+This project uses machine learning techniques to predict whether a customer will default on their credit card payment based on financial and repayment history data. The goal is to help banks identify high-risk customers early and improve credit decision-making.
 
 
 # 2. Objective
@@ -393,36 +391,21 @@ Conclusion
 
 Tuning improved the model’s ability to generalize and make accurate predictions on real-world financial data.
 
-## 🚀 Model Deployment
+## 11. Model Deployment
 
-The trained machine learning model is deployed using a Flask web application to simulate real-world usage.
+The trained model is deployed using a Flask web application.
 
----
-
-### ⚙️ Implementation
-- Model is saved after training using `joblib`
-- Flask is used to build the web interface
-- Users enter customer financial details through a form
-- The model processes inputs and generates predictions
-
----
-
-### 📥 Input Features
-- Credit limit
-- Age
-- Repayment history
-- Bill amounts
-- Payment amounts
-
----
+- Model saved using `joblib`
+- Flask handles user input and prediction
+- Users enter financial details through a web form
 
 ### 📊 Output
-- 🟢 **Low Risk** → Customer is likely to repay
-- 🔴 **High Risk** → Customer may default
-
+- 🟢 Low Risk → Customer is likely to repay  
+- 🔴 High Risk → Customer may default
+  
 ---
 
-## 🧾 Conclusion
+## 12.🧾 Conclusion
 
 This project successfully developed a machine learning model to predict credit card default risk using real-world financial data.
 
