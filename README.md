@@ -11,12 +11,24 @@ This project predicts whether a customer will default on their credit card payme
 
 ---
 
+## 📁 Project Structure   
+
+├── app.py
+├── model.pkl
+├── scaler.pkl
+├── train_model.py
+├── templates/
+│   └── index.html
+├── static/
+├── requirements.txt
+
+---
+
 ## 🛠️ Tech Stack
 - Python
 - Pandas, NumPy
 - Scikit-learn
 - Flask
-- Matplotlib, Seaborn
 
 ---
 
